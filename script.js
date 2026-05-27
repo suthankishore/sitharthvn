@@ -293,4 +293,36 @@ document.addEventListener('DOMContentLoaded', () => {
   if (statsSection) statsObserver.observe(statsSection);
 
 
+  /* ─────────────────────────────────
+     9. RESUME MODAL — cinematic PDF viewer
+  ───────────────────────────────── */
+  const resumeOverlay = document.getElementById('resumeOverlay');
+  const resumeClose   = document.getElementById('resumeClose');
+  const resumeTriggers = document.querySelectorAll('.skill-download');
+
+  function openResumeModal() {
+    resumeOverlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeResumeModal() {
+    resumeOverlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  resumeTriggers.forEach(el => el.addEventListener('click', openResumeModal));
+
+  resumeClose.addEventListener('click', closeResumeModal);
+
+  resumeOverlay.addEventListener('click', (e) => {
+    if (e.target === resumeOverlay) closeResumeModal();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && resumeOverlay.classList.contains('open')) {
+      closeResumeModal();
+    }
+  });
+
+
 });

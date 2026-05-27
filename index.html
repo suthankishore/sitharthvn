@@ -111,14 +111,14 @@
           <span class="skill-tag">Wedding Films</span>
           <span class="skill-tag">Reels &amp; Shorts</span>
           <span class="skill-tag">Cinematic Edits</span>
-          <a href="assets/resume.pdf" download class="skill-download" aria-label="Download Resume">
+          <button class="skill-download" aria-label="View Resume">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
               <polyline points="7 10 12 15 17 10"/>
               <line x1="12" y1="15" x2="12" y2="3"/>
             </svg>
             <span class="skill-download-tip">View Resume</span>
-          </a>
+          </button>
         </div>
       </div>
     </div>
@@ -296,6 +296,28 @@
           <h3 class="modal-title" id="modalTitle"></h3>
         </div>
         <a href="https://www.instagram.com/" target="_blank" class="btn btn-primary modal-ig-btn">View On Instagram</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ RESUME MODAL ═══ -->
+  <div class="resume-overlay" id="resumeOverlay">
+    <div class="resume-viewer">
+      <div class="resume-topbar">
+        <button class="resume-close" id="resumeClose" aria-label="Close">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <a href="assets/resume.pdf" download class="resume-dl-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          <span>Download</span>
+        </a>
+      </div>
+      <div class="resume-body">
+        <iframe src="assets/resume.pdf#toolbar=0&navpanes=0&scrollbar=0" class="resume-embed" title="Resume PDF"></iframe>
       </div>
     </div>
   </div>

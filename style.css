@@ -746,6 +746,11 @@ body {
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
   flex-shrink: 0;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: inherit;
+  line-height: 1;
+  padding: 0;
 }
 .skill-download svg {
   width: 16px;
@@ -1264,6 +1269,137 @@ body {
   color: var(--white);
 }
 .modal-ig-btn { padding: 0.65rem 1.6rem; font-size: 0.75rem; }
+
+/* ═══════════════════════════════════
+   RESUME MODAL — Cinematic Premium Viewer
+═══════════════════════════════════ */
+.resume-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  background: rgba(3, 3, 5, 0.92);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  padding: 1.5rem;
+}
+.resume-overlay.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.resume-viewer {
+  width: 90vw;
+  max-width: 1000px;
+  height: 82vh;
+  max-height: 760px;
+  background: linear-gradient(155deg, rgba(10, 10, 14, 0.98), rgba(5, 5, 8, 0.99));
+  border: 1px solid rgba(168, 85, 247, 0.18);
+  border-radius: 22px;
+  box-shadow:
+    0 0 0 1px rgba(168, 85, 247, 0.05),
+    0 0 40px rgba(139, 92, 246, 0.05),
+    0 0 80px rgba(139, 92, 246, 0.025),
+    0 30px 80px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.035);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transform: scale(0.9) translateY(30px);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.resume-overlay.open .resume-viewer {
+  transform: scale(1) translateY(0);
+}
+
+/* ── Top bar ── */
+.resume-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid rgba(168, 85, 247, 0.07);
+  flex-shrink: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.resume-close {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.02);
+  color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  flex-shrink: 0;
+}
+.resume-close svg {
+  width: 16px;
+  height: 16px;
+}
+.resume-close:hover {
+  color: var(--white);
+  background: rgba(139, 92, 246, 0.15);
+  border-color: rgba(139, 92, 246, 0.3);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.15);
+}
+
+.resume-dl-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(168, 85, 247, 0.18);
+  background: rgba(139, 92, 246, 0.06);
+  color: #c4b5fd;
+  text-decoration: none;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.resume-dl-btn svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+.resume-dl-btn:hover {
+  background: rgba(139, 92, 246, 0.18);
+  border-color: rgba(168, 85, 247, 0.35);
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.12);
+  transform: translateY(-1px);
+  color: var(--white);
+}
+
+/* ── PDF body ── */
+.resume-body {
+  flex: 1;
+  min-height: 0;
+  position: relative;
+  background: #08080c;
+}
+.resume-embed {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0 0 22px 22px;
+  background: #08080c;
+}
 
 /* ═══════════════════════════════════
    CONTACT SECTION — Cinematic Premium
