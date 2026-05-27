@@ -324,4 +324,23 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
+  /* ─────────────────────────────────
+     10. GLOBAL COLLABORATION — live timezone clocks
+  ───────────────────────────────── */
+  function updateCollabTimes() {
+    const config = [
+      { id: 'time-usa', tz: 'America/New_York' },
+      { id: 'time-uae', tz: 'Asia/Dubai' },
+    ];
+    const now = new Date();
+    config.forEach(({ id, tz }) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      const time = now.toLocaleTimeString('en-US', { timeZone: tz, hour: '2-digit', minute: '2-digit', hour12: true });
+      el.textContent = time;
+    });
+  }
+  updateCollabTimes();
+  setInterval(updateCollabTimes, 60000);
+
 });

@@ -292,22 +292,24 @@ body {
 }
 
 .hero-script {
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: 'Brush Script MT', 'Segoe Script', 'Georgia', cursive;
   font-style: italic;
-  font-size: clamp(1.3rem, 3vw, 2rem);
-  color: rgba(255,255,255,0.7);
-  margin-top: 0.4rem;
-  margin-bottom: 1.4rem;
-  font-weight: 300;
+  font-size: clamp(1.4rem, 3.5vw, 2.8rem);
+  color: rgba(255,255,255,0.88);
+  margin-top: 0.15rem;
+  margin-bottom: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-shadow: 0 0 20px rgba(255,255,255,0.06);
   opacity: 0;
   animation: fadeUp 0.7s 0.6s forwards;
 }
 
 .hero-desc {
-  font-size: 0.9rem;
-  color: var(--gray);
-  line-height: 1.8;
-  max-width: 460px;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.72);
+  line-height: 1.9;
+  max-width: 500px;
   margin-bottom: 2.2rem;
   opacity: 0;
   animation: fadeUp 0.7s 0.8s forwards;
@@ -1025,6 +1027,212 @@ body {
   .tool-accent {
     width: 18px;
   }
+}
+
+/* ═══════════════════════════════════
+   GLOBAL COLLABORATION — Premium
+═══════════════════════════════════ */
+.collab-section {
+  padding: 7rem 0 9rem;
+  position: relative;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+/* Subtle purple grain texture */
+.collab-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 800px 400px at 50% 20%, rgba(139, 92, 246, 0.05) 0%, transparent 50%),
+    radial-gradient(ellipse 500px 300px at 80% 70%, rgba(139, 92, 246, 0.03) 0%, transparent 50%),
+    radial-gradient(ellipse 400px 300px at 20% 80%, rgba(139, 92, 246, 0.02) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.collab-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.collab-section .section-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.4em;
+  color: var(--purple);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+/* ── Heading ── */
+.collab-heading {
+  font-family: var(--font-hero);
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  line-height: 1.05;
+  letter-spacing: 0.015em;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+.collab-heading .text-white { color: var(--white); }
+.collab-heading .purple-gradient {
+  background: linear-gradient(135deg, var(--purple), #a78bfa, #c4b5fd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Description ── */
+.collab-desc {
+  font-size: 0.95rem;
+  color: var(--gray);
+  line-height: 1.8;
+  text-align: center;
+  max-width: 520px;
+  margin: 0 auto 3.5rem;
+  opacity: 0.65;
+}
+
+/* ── Cards row ── */
+.collab-cards {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ── Individual card ── */
+.collab-card {
+  flex: 1;
+  min-width: 200px;
+  max-width: 280px;
+  text-align: center;
+  padding: 2.8rem 1.8rem 2.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: 18px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.15),
+    0 0 40px rgba(139, 92, 246, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover lift */
+.collab-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(139, 92, 246, 0.45);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.25),
+    0 0 60px rgba(139, 92, 246, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+/* Neon glow accent on hover */
+.collab-card::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  box-shadow: 0 0 30px rgba(139, 92, 246, 0.15);
+}
+.collab-card:hover::after {
+  opacity: 1;
+}
+
+/* ── Flag ── */
+.collab-flag {
+  font-size: 4rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 12px rgba(139, 92, 246, 0.08));
+}
+
+/* ── Country name ── */
+.collab-country {
+  font-family: var(--font-hero);
+  font-size: 1.8rem;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  margin-bottom: 0.6rem;
+  line-height: 1.1;
+}
+
+/* ── Timezone text ── */
+.collab-tz {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--purple);
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  opacity: 0.8;
+}
+
+/* ── Current time ── */
+.collab-time {
+  font-family: var(--font-hero);
+  font-size: 1.6rem;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  line-height: 1.2;
+  opacity: 0.9;
+}
+
+/* ── Bottom glowing horizon ── */
+.collab-horizon {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 120px;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(ellipse 70% 80px at 50% 100%,
+      rgba(139, 92, 246, 0.15) 0%,
+      rgba(139, 92, 246, 0.06) 25%,
+      transparent 60%);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .collab-section { padding: 4rem 0 6rem; overflow: hidden; }
+  .collab-desc { font-size: 0.85rem; margin-bottom: 2.5rem; }
+  .collab-desc br { display: none; }
+  .collab-cards { gap: 1rem; }
+  .collab-card {
+    min-width: 0;
+    max-width: 320px;
+    width: 100%;
+    padding: 2.2rem 1.5rem 2rem;
+  }
+  .collab-flag { font-size: 2.6rem; }
+  .collab-country { font-size: 1.5rem; }
+  .collab-time { font-size: 1.3rem; }
+}
+
+@media (max-width: 500px) {
+  .collab-section { padding: 3rem 0 4rem; overflow: hidden; }
+  .collab-heading { font-size: 2.2rem; }
+  .collab-desc { font-size: 0.8rem; }
+  .collab-card { padding: 1.8rem 1.2rem 1.5rem; }
+  .collab-flag { font-size: 2.2rem; }
+  .collab-country { font-size: 1.3rem; }
+  .collab-time { font-size: 1.1rem; }
+  .collab-horizon { height: 80px; }
 }
 
 /* ═══════════════════════════════════
@@ -2011,8 +2219,8 @@ body {
   }
   .hero-heading { font-size: 3.2rem; }
   .hero-tag { font-size: 0.6rem; letter-spacing: 0.2em; }
-  .hero-desc { font-size: 0.82rem; }
-  .hero-script { font-size: 1.1rem; }
+  .hero-desc { font-size: 0.9rem; }
+  .hero-script { font-size: 1.6rem; }
   .hero-btns { flex-direction: column; align-items: center; }
   .hero-btns .btn { width: 100%; text-align: center; }
   .btn { width: 100%; text-align: center; }
@@ -2073,8 +2281,8 @@ body {
   .hero-heading { font-size: 2.6rem; }
   .hero-content { padding: 3.5rem 4% 0; }
   .hero-tag { font-size: 0.5rem; letter-spacing: 0.15em; margin-bottom: 0.8rem; }
-  .hero-desc { font-size: 0.75rem; }
-  .hero-script { font-size: 1rem; }
+  .hero-desc { font-size: 0.85rem; }
+  .hero-script { font-size: 1.3rem; }
   .hero-btns { gap: 0.7rem; }
 
   .stats-grid { grid-template-columns: 1fr; gap: 1px; }
