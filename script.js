@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const fmessage = document.getElementById('fmessage');
 
   // WhatsApp number — replace with actual number (country code, no + or spaces)
-  const WA_NUMBER = '91XXXXXXXXXX';
+  const WA_NUMBER = '918300183837';
 
   if (sendBtn) {
     sendBtn.addEventListener('click', () => {
@@ -193,12 +193,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Build WhatsApp message
       const waText =
-        `Hi Sitharth! 👋\n\n` +
-        `*Name:* ${name}\n` +
-        `*Email:* ${email}\n` +
-        `*Project:* ${project}\n\n` +
-        `*Message:*\n${message}`;
-
+        `Hi Sitharth VN, I saw your portfolio and I would like to discuss a project.\n\n` +
+        `Name: ${name}\n` +
+        `Email: ${email}\n` +
+        `Project Type: ${project}\n` +
+        `Message: ${message}`;
       const encoded = encodeURIComponent(waText);
       const waUrl   = `https://wa.me/${WA_NUMBER}?text=${encoded}`;
 
