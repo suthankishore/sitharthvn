@@ -219,7 +219,7 @@ body {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('/assets/images/herbgm.png');
+  background-image: url('assets/images/herbgm.png');
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
