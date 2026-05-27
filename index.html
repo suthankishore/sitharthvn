@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sitharth VN | Video Editor</title>
+  <meta name="description" content="Cinematic video editor crafting powerful visual stories." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#"><span class="logo-s">S</span>ITHARTH VN</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tag">Video Editor · Visual Storyteller</p>
+      <h1 class="hero-heading">
+        <span class="word-white">CRAFTING</span><br />
+        <span class="word-purple reveal-letters" id="revealText">VISUAL STORIES</span>
+      </h1>
+      <p class="hero-script">That Inspire.</p>
+      <p class="hero-desc">
+        From YouTube cinematic cuts to wedding films and viral reels — I craft 
+        visual experiences that stir emotion, hold attention, and tell stories 
+        that linger long after the screen goes dark.
+      </p>
+      <div class="hero-btns">
+        <a href="#works" class="btn btn-primary">View My Works</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ STATS ═══ -->
+  <section class="stats-section" id="stats">
+    <div class="container">
+      <p class="section-label"><span class="label-line"></span>TRUSTED BY CREATORS<span class="label-line"></span></p>
+      <h2 class="section-heading stats-heading fade-up">RESULTS <span class="purple-gradient">THAT SPEAK</span></h2>
+      <div class="stats-grid">
+        <div class="stat-card fade-up">
+          <h3><span class="counter" data-target="4">0</span><span>+</span></h3>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat-card fade-up" style="--d:.1s">
+          <h3><span class="counter" data-target="25">0</span><span>+</span></h3>
+          <p>Happy Clients</p>
+        </div>
+        <div class="stat-card fade-up" style="--d:.2s">
+          <h3><span class="counter" data-target="350">0</span><span>+</span></h3>
+          <p>Projects Completed</p>
+        </div>
+        <div class="stat-card fade-up" style="--d:.3s">
+          <h3><span class="counter" data-target="100">0</span><span>%</span></h3>
+          <p>Passion &amp; Dedication</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section class="about-section" id="about">
+    <div class="container about-grid">
+      <div class="about-image-wrap fade-up">
+        <div class="about-ambient"></div>
+        <div class="about-img-frame">
+          <div class="about-edge"></div>
+          <img
+            src="assets/images/aboutus.png"
+            alt="Sitharth VN — Video Editor"
+            class="about-img"
+            loading="lazy"
+            onerror="this.style.display='none'; this.parentElement.classList.add('img-placeholder')"
+          />
+        </div>
+      </div>
+      <div class="about-text fade-up" style="--d:.15s">
+        <p class="section-label"><span class="label-line"></span>ABOUT ME<span class="label-line"></span></p>
+        <h2 class="section-heading">The Mind<br /><span class="purple">Behind the Frame</span></h2>
+        <p class="about-desc">
+          I'm Sitharth VN — a cinematic video editor obsessed with the art of 
+          visual storytelling. With over 5 years of hands-on experience, I 
+          specialize in building narratives that breathe, move, and resonate. 
+          Every cut is intentional. Every frame is crafted to feel like cinema.
+        </p>
+        <p class="about-desc">
+          Whether it's a high-energy YouTube video, an emotional wedding film, 
+          or a 30-second reel that stops the scroll — I bring the same level of 
+          precision, passion, and perspective to every project I take on.
+        </p>
+        <div class="skills-row">
+          <span class="skill-tag">YouTube Editing</span>
+          <span class="skill-tag">Wedding Films</span>
+          <span class="skill-tag">Reels &amp; Shorts</span>
+          <span class="skill-tag">Cinematic Edits</span>
+          <a href="assets/resume.pdf" download class="skill-download" aria-label="Download Resume">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            <span class="skill-download-tip">View Resume</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ═══ TOOLS ═══ -->
+<section class="tools-section" id="tools">
+  <div class="container">
+    <p class="section-label"><span class="label-line"></span>CREATIVE TOOLKIT<span class="label-line"></span></p>
+    <h2 class="section-heading centered fade-up">Tools Behind Every <span class="purple-gradient">Cinematic Frame</span></h2>
+    <p class="tools-description">Industry-standard software I use to craft visual stories that captivate, inspire, and leave a lasting impression.</p>
+    <div class="tools-container">
+      <div class="tool-card fade-up">
+        <div class="tool-logo premiere">
+          <svg viewBox="0 0 240 234"><path fill="#00005b" d="M42.5,0h155C221,0,240,19,240,42.5v149c0,23.5-19,42.5-42.5,42.5h-155C19,234,0,215,0,191.5v-149C0,19,19,0,42.5,0z"/><path fill="#9999ff" d="m57 164v-103c0-0.7 0.3-1.1 1-1.1 1.7 0 3.3 0 5.6-0.1 2.4-0.1 4.9-0.1 7.6-0.2s5.6-0.1 8.7-0.2 6.1-0.1 9.1-0.1c8.2 0 15 1 20.6 3.1 5 1.7 9.6 4.5 13.4 8.2 3.2 3.2 5.7 7.1 7.3 11.4 1.5 4.2 2.3 8.5 2.3 13 0 8.6-2 15.7-6 21.3s-9.6 9.8-16.1 12.2c-6.8 2.5-14.3 3.4-22.5 3.4-2.4 0-4 0-5-0.1s-2.4-0.1-4.3-0.1v32.1c0.1 0.7-0.4 1.3-1.1 1.4h-0.4-19c-0.8 0-1.2-0.4-1.2-1.3zm21.8-84.7v33.6c1.4 0.1 2.7 0.2 3.9 0.2h5.3c3.9 0 7.8-0.6 11.5-1.8 3.2-0.9 6-2.8 8.2-5.3 2.1-2.5 3.1-5.9 3.1-10.3 0.1-3.1-0.7-6.2-2.3-8.9-1.7-2.6-4.1-4.6-7-5.7-3.7-1.5-7.7-2.1-11.8-2-2.6 0-4.9 0-6.8 0.1-2-0.1-3.4 0-4.1 0.1z"/><path fill="#9999ff" d="m147 85.2h17.5c1 0 1.8 0.7 2.1 1.6 0.3 0.8 0.5 1.6 0.6 2.5 0.2 1 0.4 2.1 0.5 3.1 0.1 1.1 0.2 2.3 0.2 3.6 3-3.5 6.6-6.4 10.7-8.6 4.6-2.6 9.9-3.9 15.2-3.9 0.7-0.1 1.3 0.4 1.4 1.1v0.4 19.5c0 0.8-0.5 1.1-1.6 1.1-3.6-0.1-7.3 0.2-10.8 1-2.9 0.6-5.7 1.5-8.4 2.7-1.9 0.9-3.7 2.1-5.1 3.7v51c0 1-0.4 1.4-1.3 1.4h-19.7c-0.8 0.1-1.5-0.4-1.6-1.2v-0.4-55.4c0-2.4 0-4.9-0.1-7.5s-0.1-5.2-0.2-7.8c0-2.3-0.2-4.5-0.4-6.8-0.1-0.5 0.2-1 0.7-1.1 0-0.1 0.2-0.1 0.3 0z"/></svg>
+        </div>
+        <div class="tool-content">
+          <h4>Premiere Pro</h4>
+          <p>Video Editing</p>
+          <div class="tool-accent"></div>
+        </div>
+      </div>
+      <div class="tool-card fade-up" style="--d:.1s">
+        <div class="tool-logo aftereffects">
+          <svg viewBox="0 0 240 234"><path fill="#00005b" d="M42.5,0h155C221,0,240,19,240,42.5v149c0,23.5-19,42.5-42.5,42.5h-155C19,234,0,215,0,191.5v-149C0,19,19,0,42.5,0z"/><path fill="#9999ff" d="m96.4 140h-37.2l-7.6 23.6c-0.2 0.9-1 1.5-1.9 1.4h-18.8c-1.1 0-1.4-0.6-1.1-1.8l32.2-92.3c0.3-1 0.6-1.9 1-3.1 0.4-2.1 0.6-4.3 0.6-6.5-0.1-0.5 0.3-1 0.8-1.1h0.3 25.6c0.7 0 1.2 0.3 1.3 0.8l36.5 102c0.3 1.1 0 1.6-1 1.6h-20.9c-0.7 0.1-1.4-0.4-1.6-1.1l-8.2-24zm-31.4-19.9h25.4c-0.6-2.1-1.4-4.6-2.3-7.2-0.9-2.7-1.8-5.6-2.7-8.6-1-3.1-1.9-6.1-2.9-9.2s-1.9-6-2.7-8.9c-0.8-2.8-1.5-5.4-2.2-7.8h-0.2c-0.9 4.3-2 8.6-3.4 12.9-1.5 4.8-3 9.8-4.6 14.8-1.3 5.1-2.9 9.8-4.4 14z"/><path fill="#9999ff" d="m187 131h-31.7c0.4 3.1 1.4 6.2 3.1 8.9 1.8 2.7 4.3 4.8 7.3 6 4 1.7 8.4 2.6 12.8 2.5 3.5-0.1 7-0.4 10.4-1.1 3.1-0.4 6.1-1.2 8.9-2.3 0.5-0.4 0.8-0.2 0.8 0.8v15.3c0 0.4-0.1 0.8-0.2 1.2-0.2 0.3-0.4 0.5-0.7 0.7-3.2 1.4-6.5 2.4-10 3-4.7 0.9-9.4 1.3-14.2 1.2-7.6 0-14-1.2-19.2-3.5-4.9-2.1-9.2-5.4-12.6-9.5-3.2-3.9-5.5-8.3-6.9-13.1-1.4-4.7-2.1-9.6-2.1-14.6 0-5.4 0.8-10.7 2.5-15.9 1.6-5 4.1-9.6 7.5-13.7 3.3-4 7.4-7.2 12.1-9.5s10.3-3.1 16.7-3.1c5.3-0.1 10.6 0.9 15.5 3.1 4.1 1.8 7.7 4.5 10.5 8 2.6 3.4 4.7 7.2 6 11.4 1.3 4 1.9 8.1 1.9 12.2 0 2.4-0.1 4.5-0.2 6.4-0.2 1.9-0.3 3.3-0.4 4.2-0.1 0.7-0.7 1.3-1.4 1.3-0.6 0-1.7 0.1-3.3 0.2-1.6 0.2-3.5 0.3-5.8 0.3s-4.7-0.4-7.3-0.4zm-31.7-14.6h21.1c2.6 0 4.5 0 5.7-0.1 0.8-0.1 1.6-0.3 2.3-0.8v-1c0-1.3-0.2-2.5-0.6-3.7-1.8-5.6-7.1-9.4-13-9.2-5.5-0.3-10.7 2.6-13.3 7.6-1.2 2.3-1.9 4.7-2.2 7.2z"/></svg>
+        </div>
+        <div class="tool-content">
+          <h4>After Effects</h4>
+          <p>Motion Graphics</p>
+          <div class="tool-accent"></div>
+        </div>
+      </div>
+      <div class="tool-card fade-up" style="--d:.2s">
+        <div class="tool-logo davinci">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/DaVinci_Resolve_17_logo.svg" alt="DaVinci Resolve" width="40" height="40" />
+        </div>
+        <div class="tool-content">
+          <h4>DaVinci Resolve</h4>
+          <p>Color Grading</p>
+          <div class="tool-accent"></div>
+        </div>
+      </div>
+      <div class="tool-card fade-up" style="--d:.3s">
+        <div class="tool-logo photoshop">
+          <svg viewBox="0 0 240 234"><path fill="#001e36" d="M42.5,0h155C221,0,240,19,240,42.5v149c0,23.5-19,42.5-42.5,42.5h-155C19,234,0,215,0,191.5v-149C0,19,19,0,42.5,0z"/><path fill="#31a8ff" d="M54,164.1V61.2c0-0.7,0.3-1.1,1-1.1c1.7,0,3.3,0,5.6-0.1c2.4-0.1,4.9-0.1,7.6-0.2c2.7-0.1,5.6-0.1,8.7-0.2c3.1-0.1,6.1-0.1,9.1-0.1c8.2,0,15,1,20.6,3.1c5,1.7,9.6,4.5,13.4,8.2c3.2,3.2,5.7,7.1,7.3,11.4c1.5,4.2,2.3,8.5,2.3,13c0,8.6-2,15.7-6,21.3c-4,5.6-9.6,9.8-16.1,12.2c-6.8,2.5-14.3,3.4-22.5,3.4c-2.4,0-4,0-5-0.1c-1-0.1-2.4-0.1-4.3-0.1v32.1c0.1,0.7-0.4,1.3-1.1,1.4c-0.1,0-0.2,0-0.4,0H55.2C54.4,165.4,54,165,54,164.1z M75.8,79.4V113c1.4,0.1,2.7,0.2,3.9,0.2H85c3.9,0,7.8-0.6,11.5-1.8c3.2-0.9,6-2.8,8.2-5.3c2.1-2.5,3.1-5.9,3.1-10.3c0.1-3.1-0.7-6.2-2.3-8.9c-1.7-2.6-4.1-4.6-7-5.7c-3.7-1.5-7.7-2.1-11.8-2c-2.6,0-4.9,0-6.8,0.1C77.9,79.2,76.5,79.3,75.8,79.4L75.8,79.4z"/><path fill="#31a8ff" d="M192,106.9c-3-1.6-6.2-2.7-9.6-3.4c-3.7-0.8-7.4-1.3-11.2-1.3c-2-0.1-4.1,0.2-6,0.7c-1.3,0.3-2.4,1-3.1,2c-0.5,0.8-0.8,1.8-0.8,2.7c0,0.9,0.4,1.8,1,2.6c0.9,1.1,2.1,2,3.4,2.7c2.3,1.2,4.7,2.3,7.1,3.3c5.4,1.8,10.6,4.3,15.4,7.3c3.3,2.1,6,4.9,7.9,8.3c1.6,3.2,2.4,6.7,2.3,10.3c0.1,4.7-1.3,9.4-3.9,13.3c-2.8,4-6.7,7.1-11.2,8.9c-4.9,2.1-10.9,3.2-18.1,3.2c-4.6,0-9.1-0.4-13.6-1.3c-3.5-0.6-7-1.7-10.2-3.2c-0.7-0.4-1.2-1.1-1.1-1.9v-17.4c0-0.3,0.1-0.7,0.4-0.9c0.3-0.2,0.6-0.1,0.9,0.1c3.9,2.3,8,3.9,12.4,4.9c3.8,1,7.8,1.5,11.8,1.5c3.8,0,6.5-0.5,8.3-1.4c1.6-0.7,2.7-2.4,2.7-4.2c0-1.4-0.8-2.7-2.4-4c-1.6-1.3-4.9-2.8-9.8-4.7c-5.1-1.8-9.8-4.2-14.2-7.2c-3.1-2.2-5.7-5.1-7.6-8.5c-1.6-3.2-2.4-6.7-2.3-10.2c0-4.3,1.2-8.4,3.4-12.1c2.5-4,6.2-7.2,10.5-9.2c4.7-2.4,10.6-3.5,17.7-3.5c4.1,0,8.3,0.3,12.4,0.9c3,0.4,5.9,1.2,8.6,2.3c0.4,0.1,0.8,0.5,1,0.9c0.1,0.4,0.2,0.8,0.2,1.2v16.3c0,0.4-0.2,0.8-0.5,1C192.9,107.1,192.4,107.1,192,106.9z"/></svg>
+        </div>
+        <div class="tool-content">
+          <h4>Photoshop</h4>
+          <p>Thumbnail Design</p>
+          <div class="tool-accent"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- ═══ WORKS ═══ -->
+  <section class="works-section" id="works">
+    <div class="container">
+      <p class="section-label"><span class="label-line"></span>MY WORKS<span class="label-line"></span></p>
+      <h2 class="section-heading centered fade-up">Selected <span class="purple-gradient">projects</span></h2>
+      <div class="works-filters fade-up">
+        <button class="filter-btn active" data-filter="all">ALL</button>
+        <button class="filter-btn" data-filter="youtube">YOUTUBE</button>
+        <button class="filter-btn" data-filter="reels">REELS</button>
+        <button class="filter-btn" data-filter="wedding">WEDDING</button>
+      </div>
+      <div class="works-grid" id="worksGrid">
+
+        <!-- Card 1 — Large horizontal hero -->
+        <div class="work-card large fade-up" data-category="youtube"
+             data-title="Cinematic Travel Vlog"
+             data-sub="YouTube · Visual Journey"
+             data-video="assets/videosall/reels2.mp4">
+          <div class="work-thumb" style="background-image:url('assets/images/reelimg.png')"></div>
+          <div class="work-overlay">
+            <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+            <div class="work-info">
+              <span class="work-cat">YouTube</span>
+              <p class="work-title">Cinematic Travel Vlog</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 — Vertical reel -->
+        <div class="work-card tall fade-up" style="--d:.1s" data-category="reels"
+             data-title="Urban Reels Edit"
+             data-sub="Instagram Reels · Street"
+             data-video="assets/videosall/reels1.mp4">
+          <div class="work-thumb" style="background-image:url('assets/images/reels2img.png')"></div>
+          <div class="work-overlay">
+            <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+            <div class="work-info">
+              <span class="work-cat">Reels</span>
+              <p class="work-title">Urban Reels Edit</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 — Vertical reel -->
+        <div class="work-card tall fade-up" style="--d:.2s" data-category="reels"
+             data-title="Lifestyle Reel"
+             data-sub="Instagram Reels · Fashion"
+             data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+          <div class="work-thumb" style="background-image:url('thumb-4.webp')"></div>
+          <div class="work-overlay">
+            <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+            <div class="work-info">
+              <span class="work-cat">Reels</span>
+              <p class="work-title">Lifestyle Reel</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 — Medium horizontal -->
+        <div class="work-card medium fade-up" style="--d:.15s" data-category="wedding"
+             data-title="Wedding Highlight Film"
+             data-sub="Wedding · Cinematic"
+             data-video="/assets/videosall/reels4.mp4">
+          <div class="work-thumb" style="background-image:url('/assets/images/reel4img.png')"></div>
+          <div class="work-overlay">
+            <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+            <div class="work-info">
+              <span class="work-cat">Wedding</span>
+              <p class="work-title">Wedding Highlight Film</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 — Medium horizontal -->
+        <div class="work-card medium fade-up" style="--d:.1s" data-category="youtube"
+             data-title="Tech Review Cinematic"
+             data-sub="YouTube · Tech"
+             data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+          <div class="work-thumb" style="background-image:url('thumb-5.webp')"></div>
+          <div class="work-overlay">
+            <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+            <div class="work-info">
+              <span class="work-cat">YouTube</span>
+              <p class="work-title">Tech Review Cinematic</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 — Medium horizontal -->
+        <div class="work-card medium fade-up" style="--d:.25s" data-category="wedding"
+             data-title="Pre-Wedding Story"
+             data-sub="Wedding · Story"
+             data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+          <div class="work-thumb" style="background-image:url('thumb-6.webp')"></div>
+          <div class="work-overlay">
+            <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+            <div class="work-info">
+              <span class="work-cat">Wedding</span>
+              <p class="work-title">Pre-Wedding Story</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ WORKS MODAL ═══ -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-video-wrap">
+        <iframe id="modalIframe" src="" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <div>
+          <p class="modal-cat" id="modalCat"></p>
+          <h3 class="modal-title" id="modalTitle"></h3>
+        </div>
+        <a href="https://www.instagram.com/" target="_blank" class="btn btn-primary modal-ig-btn">View On Instagram</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section class="contact-section" id="contact">
+    <div class="container contact-grid">
+
+      <!-- Left -->
+      <div class="contact-left fade-up">
+        <div class="contact-label-wrap">
+          <span class="label-line"></span>
+          <span class="section-label">GET IN TOUCH</span>
+          <span class="label-line"></span>
+        </div>
+        <h2 class="section-heading contact-heading">LET'S WORK<br /><span class="purple-gradient">TOGETHER</span></h2>
+        <p class="contact-desc">
+          Have a project in mind? Let's create something extraordinary together. 
+          Reach out and let the story begin.
+        </p>
+        <div class="contact-cards">
+          <a href="https://wa.me/918300183837" target="_blank" class="contact-card">
+            <div class="cc-icon whatsapp-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <div class="cc-text">
+              <span>WhatsApp</span>
+              <small>+91 83001 83837</small>
+            </div>
+            <svg class="cc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="https://www.instagram.com/sidx.edithouse/" target="_blank" class="contact-card">
+            <div class="cc-icon instagram-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </div>
+            <div class="cc-text">
+              <span>Instagram</span>
+              <small>@sidx.edithouse</small>
+            </div>
+            <svg class="cc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="https://www.youtube.com/" target="_blank" class="contact-card">
+            <div class="cc-icon youtube-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </div>
+            <div class="cc-text">
+              <span>YouTube</span>
+              <small>Sitharth VN</small>
+            </div>
+            <svg class="cc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Form -->
+      <div class="contact-right fade-up" style="--d:.15s">
+        <div class="contact-form-wrap">
+          <div class="form-header">
+            <div class="form-header-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </div>
+            <div>
+              <h4 class="form-header-title">SEND A MESSAGE</h4>
+              <p class="form-header-sub">Fill out the form below and I'll get back to you soon.</p>
+            </div>
+          </div>
+          <div class="form-group">
+            <span class="form-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </span>
+            <input type="text" id="fname" placeholder="Your Name" />
+          </div>
+          <div class="form-group">
+            <span class="form-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+            </span>
+            <input type="email" id="femail" placeholder="Email Address" />
+          </div>
+          <div class="form-group">
+            <span class="form-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 10l4.553-2.069A1 1 0 0121 8.87V15a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1h10"/><rect x="9" y="11" width="6" height="5" rx="1"/></svg>
+            </span>
+            <select id="fproject">
+              <option value="" disabled selected>Project Type</option>
+              <option>YouTube Video</option>
+              <option>Wedding Film</option>
+              <option>Reels / Shorts</option>
+              <option>Cinematic Edit</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group textarea-group">
+            <span class="form-icon top-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            </span>
+            <textarea id="fmessage" placeholder="Your Message" rows="4"></textarea>
+          </div>
+          <button class="btn btn-primary btn-full" id="sendBtn">SEND PROJECT</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-logo"><span class="logo-s">S</span>ITHARTH VN</p>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/sidx.edithouse/" target="_blank" class="footer-icon-link" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <a href="https://wa.me/918300183837" target="_blank" class="footer-icon-link" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" class="footer-icon-link" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+      </div>
+      <p class="footer-copy">© 2026 Sitharth VN. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
