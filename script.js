@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
       sendBtn.textContent = 'SENT ✓';
       sendBtn.style.background = '#16a34a';
       setTimeout(() => {
-        sendBtn.textContent   = 'SEND PROJECT';
+        sendBtn.textContent   = 'SEND ENQUIRY \u279D';
         sendBtn.style.background = '';
       }, 3000);
     });
